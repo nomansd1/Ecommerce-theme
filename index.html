@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__inner">
+                <a href="#" class="brand__logo">
+                    <img src="./assets/logo.png" alt="Flowbite Logo" />
+                </a>
+                <div class="profile__menu">
+                    <button type="button" class="menu__btn" id="menuBtn">
+                        <img src="https://img.freepik.com/premium-photo/ambition-gets-you-far-i-can-testify-that-portrait-confident-mature-businessman-standing-office-with-his-colleagues-background_590464-47752.jpg?w=740"
+                            alt="user photo">
+                    </button>
+                    <div class="menu__title">
+                        <span>John Doe</span>
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                          </svg>
+                    </div>
+                    <!-- Dropdown menu -->
+                    <div class="menu" id="user-dropdown">
+                        <div class="profile__info">
+                            <span class="profile__title">John Doe</span>
+                            <span class="profile__mail">name@flowbite.com</span>
+                        </div>
+                        <hr class="hr__line">
+                        <ul class="profile__subMenu" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                                    <!-- <button data-collapse-toggle=" navbar-user" type="button"
+                                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                    aria-controls="navbar-user" aria-expanded="false">
+                                    <span class="sr-only">Open main menu</span>
+                                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 17 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                    </svg>
+                                    </button> -->
+                </div>
+                    <div class="search__bar">
+                        <label for="default-search">Search</label>
+                        <div class="search__bx">
+                            <div class="search__bxInner">
+                                <svg class="search__svg" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                </svg>
+                            </div>
+                            <input type="search" id="default-search" class="search__input"
+                                placeholder="Search products..." required>
+                            <button type="submit" class="search__btn">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+
+    <script>
+        const toggleButton = document.querySelector('#menuBtn');
+        const menu = document.querySelector('.menu');
+
+        toggleButton.addEventListener('click', function () {
+            menu.classList.toggle('show__menu');
+        });
+    </script>
+</body>
+
+</html>

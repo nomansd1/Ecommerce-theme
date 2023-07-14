@@ -250,6 +250,8 @@ header nav {
 
 .search__bx {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .search__bxInner {
@@ -289,7 +291,7 @@ header nav {
 .search__btn {
     position: absolute;
     right: 0.4375rem;
-    bottom: 0.4375rem;
+    /* bottom: 0.4375rem; */
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
     font-size: 0.875rem;

@@ -96,3 +96,24 @@
         grid-template-columns: repeat(3, minmax(0, 1fr)); 
     }
 }
+
+@media (min-width: 1024px) {
+    .login__img , .login__form {
+        width: 50%;
+    }
+    
+    .login__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .login__img img {
+        width: 70%;
+        height: auto;
+    }
+
+    .login__formInner {
+        width: 60%;
+    }
+}

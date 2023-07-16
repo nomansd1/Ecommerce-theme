@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__inner">
+                <a href="/index.html" class="brand__logo">
+                    <img src="./assets/logo.png" alt="Flowbite Logo" />
+                </a>
+                <div class="profile__menu">
+                    <a href="#" class="cart">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2h4a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4m6 0a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1m6 0v3H6V2M5 5h8m-8 5h8m-8 4h8" />
+                        </svg>
+                    </a>
+                    <a href="/cart.html" class="cart">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
+                        </svg>
+                        <span class="cart__counter">17</span>
+                    </a>
+                    <span class="seperator"></span>
+                    <div id="menuBtn" class="menu__wrapper">
+                        <button type="button" class="menu__btn">
+                            <img src="https://img.freepik.com/premium-photo/ambition-gets-you-far-i-can-testify-that-portrait-confident-mature-businessman-standing-office-with-his-colleagues-background_590464-47752.jpg?w=740"
+                                alt="user photo">
+                        </button>
+                        <div class="menu__title">
+                            <span>John Doe</span>
+                            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Dropdown menu -->
+                    <div class="menu" id="user-dropdown">
+                        <div class="profile__info">
+                            <span class="profile__title">John Doe</span>
+                            <span class="profile__mail">name@flowbite.com</span>
+                        </div>
+                        <hr class="hr__line">
+                        <ul class="profile__subMenu" aria-labelledby="user-menu-button">
+                            <li>
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">Earnings</a>
+                            </li>
+                            <li>
+                                <a href="#"">Sign
+                                    out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" search__bar">
+                    <!-- <label for="default-search">Search</label> -->
+                    <div class="search__bx">
+                        <!-- <div class="search__bxInner">
+                        </div> -->
+                        <select name="" id="">
+                            <option value="" hidden selected>Type</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                            <option value="">option 3</option>
+                        </select>
+                        <select name="" id=""></select>
+                        <input type="search" id="default-search" class="search__input"
+                            placeholder="Search products..." required>
+                        <button type="submit" class="search__btn btn">
+                            <svg class="search__svg" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="2"
+                                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                            <!-- <span>Search</span> -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page__bx">
+        <h1 class="page__title">Checkout</h1>
+        <div class="checkout__grid">
+            <div class="checkout__form">
+                <div class="checkout__formInput">
+                    <label for="">Distributor Name</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Destination Port</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select destination port</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Size</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Shipment Term</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select shipment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Payment Term</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select payment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Shipment From</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select payment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">General Rate Increase (GRI)</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="checkout__form">
+                <div class="checkout__formInput">
+                    <label for="">Container Volume</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Size</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Shipment Term</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select shipment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Maximum Load</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Gross Weight</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Special Instruction</label>
+                    <textarea name="" id="" ></textarea>
+                </div>
+            </div>
+            <div class="checkout__form">
+                <div class="checkout__formInput">
+                    <label for="">Order Carton</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Order Value</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Volume Status</label>
+                    <input type="text">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Weight Status</label>
+                    <input type="text">
+                </div>
+                <button class="place__orderBtn btn">Plade Order</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

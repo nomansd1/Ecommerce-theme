@@ -75,14 +75,13 @@
                         <!-- <div class="search__bxInner">
                         </div> -->
                         <select name="" id="">
-                            <option value="" hidden selected>Type</option>
+                            <option value="" hidden selected>By Marketing</option>
                             <option value="">option 1</option>
                             <option value="">option 2</option>
                             <option value="">option 3</option>
                         </select>
-                        <select name="" id=""></select>
                         <input type="search" id="default-search" class="search__input"
-                            placeholder="Search products..." required>
+                            placeholder="Search by marketing" required>
                         <button type="submit" class="search__btn btn">
                             <svg class="search__svg" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -159,6 +158,46 @@
                     </div>
                 </div>
             </div>
+            <div class="checkout__form">
+                <div class="checkout__formInput">
+                    <label for="">Destination Port</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select destination port</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Required Dispatched Date</label>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Container Size</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select container size</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Shipment Term</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select shipment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Payment Term</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select payment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">Shipment From</label>
+                    <select name="" id="">
+                        <option value="" disabled selected hidden>Select payment term</option>
+                    </select>
+                </div>
+                <div class="checkout__formInput">
+                    <label for="">General Rate Increase (GRI)</label>
+                    <input type="text">
+                </div>
+            </div>
             <div class="bill__priceBx">
                 <div class="bill__details">
                     <div class="total__priceBx">
@@ -167,11 +206,11 @@
                     </div>
                     <div class="additional__billInfoBx">
                         <div class="additional__bInfo">
-                            <span>Items</span>
+                            <span>Order Carton</span>
                             <span>4</span>
                         </div>
                         <div class="additional__bInfo">
-                            <span>Dicount</span>
+                            <span>Discount</span>
                             <span>4</span>
                         </div>
                         <div class="additional__bInfo">
@@ -180,6 +219,32 @@
                         </div>
                     </div>
                     <hr>
+                    <div class="additional__billInfoBx">
+                        <div class="additional__bInfo">
+                            <span>Order Due Date</span>
+                            <span>14 July 2024</span>
+                        </div>
+                        <div class="additional__bInfo">
+                            <span>Container Volume</span>
+                            <span>4%</span>
+                        </div>
+                        <div class="additional__bInfo">
+                            <span>Container Maximum Load</span>
+                            <span>21000</span>
+                        </div>
+                        <div class="additional__bInfo">
+                            <span>Container Gross Weight</span>
+                            <span>Less Container Load</span>
+                        </div>
+                        <div class="additional__bInfo">
+                            <span>Container Weight Status</span>
+                            <span>Weight is Fine</span>
+                        </div>
+                        <div class="additional__bInfo">
+                            <span>Container Volume Status</span>
+                            <span>0</span>
+                        </div>
+                    </div>
                 </div>
                 <a href="checkout.html" class="checkout__btn btn">
                     Checkout

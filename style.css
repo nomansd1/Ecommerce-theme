@@ -40,29 +40,51 @@ body {
 ===================================*/
 
 .login__bx {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     height: 100vh;
+    position: relative;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5F6FD;
 }
 
 .login__img {
-    display: none;
+    /* display: none; */
+    width: 40%;
+    background-color: #1D4ED8;
+    height: 95%;
+    position: absolute;
+    bottom: -5%;
+    left: -10%;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 76%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.login__logo img {
+    width: 100%;
+    height: 100%;
+}
 
 .login__form {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 400px;
+    z-index: 100;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .login__formInner {
-    width: 90%;
-    margin: 0 auto;
     color: #111827;
+    width: 100%;
+    padding: 2rem;
 }
 
 
@@ -81,7 +103,17 @@ body {
 .login__formInner h2 {
     font-size: 1.55rem;
     font-weight: 500;
-    margin-bottom: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+.form__inputBx {
+    margin-bottom: 1rem;
+}
+
+.login__formInner label {
+    font-size: .9rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
 }
 
 .login__formInner input {
@@ -89,8 +121,6 @@ body {
     width: 100%;
     padding: .5rem .75rem;
     border-radius: .5rem;
-    margin-top: .5rem;
-    margin-bottom: 1rem;
     border: 1px solid #6B7280;
 }
 
@@ -444,11 +474,11 @@ header nav {
     border-radius: 0.25rem;
     border-width: 1px;
     border-color: #E5E7EB;
-    /* max-width: 15rem; */
     background-color: #fff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     /* width: 100%; */
     margin: .5rem;
+    min-width: 300px;
 }
 
 
@@ -457,6 +487,8 @@ header nav {
     border-top-right-radius: 0.5rem;
     background-color: #E6E8EC;
     width: 100%;
+    height: 164.61px;
+    /* height: auto; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -464,8 +496,9 @@ header nav {
 }
 
 .product__wrapper .product__img img {
-    width: 80%;
-    height: 100%;
+    width: 100px;
+    height: 120px;
+    max-width: 90%;
 }
 
 .product__inner {
@@ -686,10 +719,10 @@ header nav {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    width: 100%;
+    width: 30%;
     height: auto;
     border-radius: .5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .cart__productImgBx img {
@@ -702,23 +735,17 @@ header nav {
     flex-direction: column;
     justify-content: start;
     width: 100%;
+    margin-left: .5rem;
 }
 
 .cart__productTitle {
-    font-size: 21px;
-    margin-bottom: .5rem;
-}
-
-.cart__productDesc {
-    font-size: 14px;
-    margin-bottom: .2rem;
+    font-size: 15px;
+    margin-bottom: .25rem;
 }
 
 .cart__productActions {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
 .cart__productPrice {
@@ -728,30 +755,33 @@ header nav {
 } 
 
 .cart__productPrice span {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .cart__productPrice del {
     margin-left: 5px;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .cart__productQty {
     display: flex;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .cart__productQty button:first-child {
     margin-right: 10px;
+    padding: .25rem .5rem;
 }
 
 .cart__productQty button:last-child {
     margin-left: 10px;
+    padding: .25rem .5rem;
 }
 
 .cart__productQty input {
-    max-width: 100px;
+    max-width: 70px;
     padding-left: 10px;
     border-radius: .25rem;
     background-color: transparent;

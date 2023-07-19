@@ -5,6 +5,7 @@
 }
 
 @media (min-width: 780px) {
+
     .nav__inner {
         flex-wrap: nowrap;
     }
@@ -23,7 +24,11 @@
     }
 }
 
-@media (min-width: 748px) { 
+@media (min-width: 748px) {
+    .banner, .page__bx  {
+        top: 69px;
+    }
+
     .cart__section {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr)); 
@@ -46,7 +51,9 @@
         height: fit-content;
         /* width: 100%; */
     }
-
+    .bill__priceBx {
+        margin-top: 0px;
+    }
 }
 
 
@@ -60,10 +67,25 @@
 @media (min-width: 1024px) {
     .login__img {
         width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .login__img img {
         width: 60%;
         height: auto;
+    }
+
+    .login__img2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 640px) {
+    .login__form {
+        width: 400px;
     }
 }

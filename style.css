@@ -42,6 +42,7 @@ body {
 .login__bx {
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     position: relative;
     display: grid;
     align-items: center;
@@ -50,19 +51,51 @@ body {
 }
 
 .login__img {
-    /* display: none; */
+    display: none;
     width: 40%;
     background-color: #1D4ED8;
     height: 95%;
     position: absolute;
     bottom: -5%;
-    left: -10%;
-    border-top-left-radius: 60%;
-    border-top-right-radius: 76%;
-    border-bottom-right-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    right: -10%;
+    border-top-right-radius: 60%;
+    border-top-left-radius: 76%;
+    border-bottom-left-radius: 50%;
+}
+
+.login__img img {
+    transform: scaleX(-1);
+}
+
+.login__logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.login__img2 {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-color: #1D4ED8;
+    border-radius: 100%;
+    position: absolute;
+    bottom: -25%;
+    left: -12%;
+}
+
+.login__img2Circle {
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+    background-color: #F5F6FD;
+}
+
+.login__logo {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
 }
 
 .login__logo img {
@@ -74,7 +107,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 350px;
     z-index: 100;
     background-color: #fff;
     border-radius: .5rem;
@@ -137,8 +170,10 @@ body {
 
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 9999;
 }
 
@@ -439,6 +474,7 @@ header nav {
 /* Products grid */
 .banner {
     position: relative;
+    top: 121.8px;
     background-color: #070641;
     height: 300px;
     display: flex;
@@ -602,7 +638,9 @@ header nav {
 .page__bx {
     padding: 1rem .5rem;
     max-width: 1280px;
-    margin: 0 auto;   
+    margin: 0 auto;
+    position: relative;
+    top: 121.8px;
 }
 
 .page__title {
@@ -625,7 +663,7 @@ header nav {
 } */
 
 .empty__cart {
-    width: 40%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     display: flex;
@@ -635,18 +673,23 @@ header nav {
 }
 
 .empty__cart img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
 }
 
 .empty__cartHeading {
     margin-top: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .bill__priceBx, .cart__productBx {
     margin: 0 .5rem;
+}
+
+.bill__priceBx {
+    margin-top: 1rem;
 }
 
 .bill__details , .cart__product {
@@ -708,7 +751,6 @@ header nav {
 
 .cart__product {
     display: flex;
-    flex-direction: column;
     height: fit-content;
     margin-bottom: 1rem;
     position: relative;
@@ -721,6 +763,7 @@ header nav {
     background-color: #fff;
     width: 30%;
     height: auto;
+    max-height: 150px;
     border-radius: .5rem;
     /* margin-bottom: 1rem; */
 }
@@ -815,7 +858,7 @@ header nav {
     padding: 1rem;
     border-radius: .5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
-    width: 40%;
+    width: 100%;
     margin: 0 .5rem;
 }
 

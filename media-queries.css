@@ -18,12 +18,6 @@
     }
 }
 
-@media (max-width: 767px) { 
-    .product__wrapper {
-        max-width: 15rem;
-    }
-}
-
 @media (min-width: 748px) {
     .banner, .page__bx  {
         top: 69px;
